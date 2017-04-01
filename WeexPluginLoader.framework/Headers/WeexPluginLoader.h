@@ -8,6 +8,7 @@
 
 
 #import "WPLMacro.h"
+#import "WPLRegister.h"
 
 #ifndef __WEEX_PLUGIN_H__
 #define __WEEX_PLUGIN_H__

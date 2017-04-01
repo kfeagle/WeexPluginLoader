@@ -17,10 +17,10 @@
 #define WX_PLUGIN_NAME(module,jsname,classname) WX_PLUGIN_NAME_SEPARATOR(module,jsname,classname,&)
 
 #define WX_PlUGIN_EXPORT_MODULE_DATA(jsname,classname) \
-char * k##jsname##classname##Configuration WeexPluginDATA = WX_PLUGIN_NAME("module",jsname,classname);
+char * k##classname##Configuration WeexPluginDATA = WX_PLUGIN_NAME("module",jsname,classname);
 
 #define  WX_PlUGIN_EXPORT_COMPONENT_DATA(jsname,classname)\
-char * k##jsname##classname##Configuration WeexPluginDATA = WX_PLUGIN_NAME("component",jsname,classname);
+char * k##classname##Configuration WeexPluginDATA = WX_PLUGIN_NAME("component",jsname,classname);
 
 #define WX_PlUGIN_EXPORT_HANDLER_DATA(jsimpl,jsprotocolname)\
 char * k##jsimpl##jsprotocolname##Configuration WeexPluginDATA = WX_PLUGIN_NAME("protocol",jsimpl,jsprotocolname);
