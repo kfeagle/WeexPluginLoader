@@ -27,4 +27,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.frameworks = 'Foundation','CoreData'
   s.dependency 'WeexSDK'
+  s.dependency 'SocketRocket'
+  s.libraries = "stdc++"
 end
