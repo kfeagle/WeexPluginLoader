@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "WeexPluginLoader"
-  s.version      = "0.0.1.3"
+  s.version      = "0.0.1.5"
   s.summary      = "Weex Plugin Loader"
 
   s.description  = <<-DESC
@@ -20,13 +20,17 @@ Pod::Spec.new do |s|
                      "kfeagle" =>"songhaibohust@gmail.com"
                    }
   s.platform     = :ios
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = "7.0"
   #s.source =  { :path => '.' }
-  s.source       = { :git => 'https://github.com/kfeagle/WeexPluginLoader.git', :tag => '0.0.1.3' }
+  s.source       = { :git => 'https://github.com/kfeagle/WeexPluginLoader.git', :tag => '0.0.1.1' }
+  #s.source       = { :git => 'https://github.com/kfeagle/WeexPluginLoader.git' }
   s.source_files  = "WeexPluginLoader.framework/Headers/*.{h,m,mm}"
+  s.ios.preserve_paths      = 'WeexPluginLoader.framework'
+  s.ios.public_header_files  = 'WeexPluginLoader.framework/Headers/*.h'
+  s.ios.vendored_frameworks  = 'WeexPluginLoader.framework'
+  s.dependency "WeexSDK"
   s.requires_arc = true
-  s.frameworks = 'Foundation','CoreData'
-  s.dependency 'WeexSDK'
   s.dependency 'SocketRocket'
   s.libraries = "stdc++"
+
 end
