@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "WeexPluginLoader"
-  s.version      = "0.0.1.1"
+  s.version      = "0.0.1.5"
   s.summary      = "Weex Plugin Loader"
 
   s.description  = <<-DESC
@@ -20,10 +20,14 @@ Pod::Spec.new do |s|
                      "kfeagle" =>"songhaibohust@gmail.com"
                    }
   s.platform     = :ios
-  s.ios.deployment_target = '7.0'
-  s.source =  { :path => '.' }
-  s.source_files  = "WeexPluginLoader.framework/Headers/*.{h,m,mm}"
+  s.ios.deployment_target = "7.0"
+  s.source =  { :http => 'http://download.taobaocdn.com/freedom/42865/compress/WeexPluginLoader.framework-0.0.1.7.zip ' }
+  s.ios.preserve_paths      = 'WeexPluginLoader.framework'
+  s.ios.public_header_files  = 'WeexPluginLoader.framework/Headers/*.h'
+  s.ios.vendored_frameworks  = 'WeexPluginLoader.framework'
+  s.dependency "WeexSDK"
   s.requires_arc = true
-  s.frameworks = 'Foundation','CoreData'
-  s.dependency 'WeexSDK'
+  s.dependency 'SocketRocket'
+  s.libraries = "stdc++"
+
 end
