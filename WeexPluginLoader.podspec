@@ -21,13 +21,13 @@ Pod::Spec.new do |s|
                    }
   s.platform     = :ios
   s.ios.deployment_target = "7.0"
-  s.source =  { :http => 'https://github.com/kfeagle/WeexPluginLoader/blob/dev/WeexPluginLoader.frameworkold.zip' }
-  s.ios.preserve_paths      = 'WeexPluginLoader.framework'
-  s.ios.public_header_files  = 'WeexPluginLoader.framework/Headers/*.h'
-  s.ios.vendored_frameworks  = 'WeexPluginLoader.framework'
+  s.source =  { :http => 'https://github.com/kfeagle/WeexPluginLoader/blob/0.0.1.7/WeexPluginLoader.framework.zip' }
+  
+  s.vendored_frameworks  = 'WeexPluginLoader.framework'
   s.dependency "WeexSDK"
   s.requires_arc = true
-  s.dependency 'SocketRocket'
   s.libraries = "stdc++"
+  s.frameworks = 'Foundation','CoreData'
+
 
 end
