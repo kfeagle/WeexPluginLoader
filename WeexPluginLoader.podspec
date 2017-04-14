@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
                    }
   s.platform     = :ios
   s.ios.deployment_target = "7.0"
-  s.source =  { :http => 'http://download.taobaocdn.com/freedom/42865/compress/WeexPluginLoader.framework-0.0.1.7.zip' }
+  s.source =  { :http => 'https://github.com/kfeagle/WeexPluginLoader/blob/dev/WeexPluginLoader.framework.zip' }
   s.ios.preserve_paths      = 'WeexPluginLoader.framework'
   s.ios.public_header_files  = 'WeexPluginLoader.framework/Headers/*.h'
   s.ios.vendored_frameworks  = 'WeexPluginLoader.framework'
