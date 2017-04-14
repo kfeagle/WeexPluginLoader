@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "WeexPluginLoader"
-  s.version      = "0.0.1.9"
+  s.version      = "0.0.1.9.1"
   s.summary      = "Weex Plugin Loader"
 
   s.description  = <<-DESC
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
                    }
   s.platform     = :ios
   s.ios.deployment_target = "7.0"
-  s.source =  { :http => 'http://download.taobaocdn.com/freedom/42865/compress/WeexPluginLoader.framework-0.0.1.7.zip' }
+  s.source =  { :http => 'https://gw.alicdn.com/bao/uploaded/TB1uP10QFXXXXX_XXXXXXXXXXXX.zip' }
   
   s.vendored_frameworks  = 'WeexPluginLoader.framework'
   s.dependency "WeexSDK"
