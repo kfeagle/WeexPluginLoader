@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
                    }
   s.platform     = :ios
   s.ios.deployment_target = "7.0"
-  s.source =  { :http => 'https://github.com/kfeagle/WeexPluginLoader/blob/0.0.1.7/WeexPluginLoader.framework.zip' }
+  s.source =  { :http => 'http://download.taobaocdn.com/freedom/42865/compress/WeexPluginLoader.framework-0.0.1.7.zip' }
   
   s.vendored_frameworks  = 'WeexPluginLoader.framework'
   s.dependency "WeexSDK"
